@@ -1,0 +1,16 @@
+1) Crear el entorno virtual (en la carpeta donde quieras trabajar):
+cd ~/mi_proyecto        # o la carpeta que uses
+python3 -m venv mienv
+2) Activar el entorno virtual:
+source mienv/bin/activate
+3) Actualizar pip:
+python -m pip install --upgrade pip
+4)Instalar Jupyter (o JupyterLab) e ipykernel:
+pip install jupyterlab ipykernel
+5)Registrar el kernel de este entorno para que aparezca en Jupyter:
+python -m ipykernel install --user --name mienv --display-name "Python (mienv)"
+6) Arrancar Jupyter:
+jupyter notebook
+7)Instalar paquetes dentro del entorno (ejemplos):
+pip install numpy pandas matplotlib scikit-learn
+
